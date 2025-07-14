@@ -163,7 +163,7 @@ for exp in range(len(name_exp_jon)):
     name_exp_grd  = name_exp_grd_jon[exp]              # folder where grid data
     nbr_levels    = nbr_levels_jon[exp]
     for t_nc in range(len(time)):
-        data = Croco(name_exp,nbr_levels,output_freq,date_ini,date_end,time[t_nc],name_exp_grd,name_pathdata)
+        data = Croco(name_exp,nbr_levels,time[t_nc],name_exp_grd,name_pathdata)
         data.get_grid()
         dsurf   = 1./np.transpose(np.tile(data.pm*data.pn,(int(nbr_levels),1,1)),(1,2,0)) # horizontal surface area
         dsurf_w = 1./np.transpose(np.tile(data.pm*data.pn,(int(nbr_levels)-1,1,1)),(1,2,0)) # horizontal surface area at w-points
