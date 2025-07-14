@@ -1,5 +1,5 @@
 '''
-NS : Needs "compute_Keff_ridge_plain_hab_v2.py" to run before 
+NS : Needs "precompute_figure7.py" to run before 
     Compute statistics (10th and 90th percentiles + median value) of diffusivities :   
                  (1) parameterized diffusivity K_KPP, called "AKt" in CROCO 
                  (2) Effective diffusivity diagnosed online K_eff
